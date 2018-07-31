@@ -1,0 +1,5 @@
+C:\Users\Jorge.Perez\Downloads\LearningRhinoServiceBus-master\LearningRhinoServiceBus-master\Source\E3_PubSub_using_MSMQ_as_transport\Messages\bin\Debug\Messages.dll
+C:\Users\Jorge.Perez\Downloads\LearningRhinoServiceBus-master\LearningRhinoServiceBus-master\Source\E3_PubSub_using_MSMQ_as_transport\Messages\bin\Debug\Messages.pdb
+C:\Users\Jorge.Perez\Downloads\LearningRhinoServiceBus-master\LearningRhinoServiceBus-master\Source\E3_PubSub_using_MSMQ_as_transport\Messages\obj\Debug\Messages.csprojResolveAssemblyReference.cache
+C:\Users\Jorge.Perez\Downloads\LearningRhinoServiceBus-master\LearningRhinoServiceBus-master\Source\E3_PubSub_using_MSMQ_as_transport\Messages\obj\Debug\Messages.dll
+C:\Users\Jorge.Perez\Downloads\LearningRhinoServiceBus-master\LearningRhinoServiceBus-master\Source\E3_PubSub_using_MSMQ_as_transport\Messages\obj\Debug\Messages.pdb
