@@ -15,11 +15,13 @@ namespace Backend
 
         public void Consume(HelloWorldMessage message)
         {
+            // Step 2: server receive message from client
             Console.WriteLine(message.Content);
 
+            // Step 3: send back to client
             _serviceBus.Publish(new HelloWorldResponse
             {
-                Content = "Well, hello back!!!"
+                Content = "Well, hello back from server!!!"
             });
 
             //_serviceBus.Publish(new MessageWithoutSubscriber());
