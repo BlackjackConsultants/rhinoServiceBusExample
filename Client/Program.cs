@@ -17,7 +17,7 @@ namespace Client {
             }
             // argument 2: machine name
             if (args.Length == 2) {
-                machineName = args[1];
+                machineName = string.Format("msmq://{0}/", args[1]);
             }
             // argument 3: queue name
             if (args.Length == 3) {
