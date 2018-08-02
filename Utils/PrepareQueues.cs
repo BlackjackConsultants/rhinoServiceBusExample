@@ -17,8 +17,16 @@ namespace Utils {
         }
 
         private static void CreateQueueIfNotExists(string queuePath) {
-            if (!MessageQueue.Exists(queuePath)) {
-                MessageQueue.Create(queuePath);
+            try {
+                if (!MessageQueue.Exists(queuePath)) {
+                    MessageQueue.Create(queuePath);
+                }
+            } catch (Exception exc) {
+                Console.WriteLine("Error found while communicating with queuePath:{0}", queuePath);
+                Console.WriteLine(exc.Message);
+                Console.WriteLine(exc.StackTrace);
+                Console.WriteLine(exc.Source);
+                throw;
             }
         }
 
