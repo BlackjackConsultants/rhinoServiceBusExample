@@ -8,7 +8,7 @@ namespace Client
     {
         public void Consume(HelloWorldResponse message) {
             // step 4: receive message from server
-            Console.WriteLine(message.Content);
+            Console.WriteLine("CLIENT-" + message.Content);
         }
     }
 }

@@ -12,10 +12,10 @@ namespace Backend {
 
         public void Consume(HelloWorldMessage message) {
             // Step 2: server receive message from client
-            Console.WriteLine(message.Content);
+            Console.WriteLine("BACKEND-" + message.Content);
 
             // Step 3: send back to client
-            MessagingService.SendMessageToClients(serviceBus, "message from backend | " + message.Content.Split(':')[0] + message.Content.Split(':')[1]);
+            MessagingService.SendMessageToClients(serviceBus, message.Content);
         }
     }
 }
