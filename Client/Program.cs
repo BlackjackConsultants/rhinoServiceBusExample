@@ -11,15 +11,15 @@ namespace Client {
             int repeat=100;
             string machineName = "msmq://localhost/";
             string queueName = "LearningRhinoESB.E3.Client";
-            // argument 1
+            // argument 1: repeat
             if (args.Length == 1) {
                 repeat = int.Parse(args[0]);
             }
-            // argument 2
+            // argument 2: machine name
             if (args.Length == 2) {
                 machineName = args[1];
             }
-            // argument 3
+            // argument 3: queue name
             if (args.Length == 3) {
                 queueName = args[2];
             }
