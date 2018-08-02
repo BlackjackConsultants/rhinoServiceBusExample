@@ -14,13 +14,9 @@ namespace Client {
             host.Start<ClientBootStrapper>();
 
             Console.WriteLine("Client 1: Hit enter to send message");
-            Console.ReadLine();
 
             // step 1: send hello world
-            var bus = host.Bus as IServiceBus;
-            bus.Send(new HelloWorldMessage {
-                Content = "Hello World!!!"
-            });
+            MessagingService.SendMessageToHost(host, "message from client");
             Console.ReadLine();
         }
     }

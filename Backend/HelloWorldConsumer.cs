@@ -1,13 +1,13 @@
 using System;
 using Messages;
 using Rhino.ServiceBus;
+using Rhino.ServiceBus.Hosting;
 
 namespace Backend {
     public class HelloWorldConsumer : ConsumerOf<HelloWorldMessage> {
-        private readonly IServiceBus _serviceBus;
-
+        private IServiceBus serviceBus;
         public HelloWorldConsumer(IServiceBus serviceBus) {
-            _serviceBus = serviceBus;
+            this.serviceBus = serviceBus;
         }
 
         public void Consume(HelloWorldMessage message) {
@@ -15,12 +15,7 @@ namespace Backend {
             Console.WriteLine(message.Content);
 
             // Step 3: send back to client
-            _serviceBus.Publish(new HelloWorldResponse {
-                Content = "Well, hello back from server!!!"
-            });
-
-            //_serviceBus.Publish(new MessageWithoutSubscriber());
-            //_serviceBus.Notify(new MessageWithoutSubscriber());
+            MessagingService.SendMessageToClients(serviceBus, "message from backend");
         }
     }
 }

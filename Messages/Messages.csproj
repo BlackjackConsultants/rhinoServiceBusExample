@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Rhino.ServiceBus">
+      <HintPath>..\Utils\bin\Debug\Rhino.ServiceBus.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,6 +46,7 @@
     <Compile Include="HelloWorldMessage.cs" />
     <Compile Include="HelloWorldResponse.cs" />
     <Compile Include="MessageWithoutSubscriber.cs" />
+    <Compile Include="MessagingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
