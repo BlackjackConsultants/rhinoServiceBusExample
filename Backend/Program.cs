@@ -3,13 +3,10 @@ using Rhino.ServiceBus.Hosting;
 using Rhino.ServiceBus.Msmq;
 using Utils;
 
-namespace Backend
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-			// create and purge queues
+namespace Backend {
+    class Program {
+        static void Main(string[] args) {
+            // create and purge queues
             PrepareQueues.Prepare("msmq://localhost/LearningRhinoESB.E3.Backend", QueueType.Standard);
 
             Console.WriteLine("Backend: Starting to listen for incoming messages ...");

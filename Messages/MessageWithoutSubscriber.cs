@@ -1,6 +1,4 @@
-namespace Messages
-{
-    public class MessageWithoutSubscriber
-    {
+namespace Messages {
+    public class MessageWithoutSubscriber {
     }
 }

@@ -5,12 +5,9 @@ using Rhino.ServiceBus.Hosting;
 using Rhino.ServiceBus.Msmq;
 using Utils;
 
-namespace Client
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+namespace Client {
+    class Program {
+        static void Main(string[] args) {
             PrepareQueues.Prepare("msmq://localhost/LearningRhinoESB.E3.Client", QueueType.Standard);
 
             var host = new DefaultHost();
@@ -21,8 +18,7 @@ namespace Client
 
             // step 1: send hello world
             var bus = host.Bus as IServiceBus;
-            bus.Send(new HelloWorldMessage
-            {
+            bus.Send(new HelloWorldMessage {
                 Content = "Hello World!!!"
             });
             Console.ReadLine();
