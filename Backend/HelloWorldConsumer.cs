@@ -15,7 +15,7 @@ namespace Backend {
             Console.WriteLine(message.Content);
 
             // Step 3: send back to client
-            MessagingService.SendMessageToClients(serviceBus, "message from backend" + message.Content.Split(':')[1]);
+            MessagingService.SendMessageToClients(serviceBus, "message from backend | " + message.Content.Split(':')[0] + message.Content.Split(':')[1]);
         }
     }
 }

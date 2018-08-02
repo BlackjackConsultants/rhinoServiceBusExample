@@ -9,3 +9,4 @@ C:\Users\jorge\OneDrive\jorgeprg\csharp\examples\Rhino.ServiceBus.MSMQ.Example\M
 C:\Users\jorge\OneDrive\jorgeprg\csharp\examples\Rhino.ServiceBus.MSMQ.Example\Messages\obj\Debug\Messages.dll
 C:\Users\jorge\OneDrive\jorgeprg\csharp\examples\Rhino.ServiceBus.MSMQ.Example\Messages\obj\Debug\Messages.pdb
 C:\Users\jorge\OneDrive\jorgeprg\csharp\examples\Rhino.ServiceBus.MSMQ.Example\Messages\bin\Debug\Rhino.ServiceBus.dll
+C:\Users\jorge\OneDrive\jorgeprg\csharp\examples\Rhino.ServiceBus.MSMQ.Example\Messages\obj\Debug\Messages.csprojResolveAssemblyReference.cache

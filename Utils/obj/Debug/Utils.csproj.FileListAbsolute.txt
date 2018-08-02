@@ -24,3 +24,4 @@ C:\Users\jorge\OneDrive\jorgeprg\csharp\examples\Rhino.ServiceBus.MSMQ.Example\U
 C:\Users\jorge\OneDrive\jorgeprg\csharp\examples\Rhino.ServiceBus.MSMQ.Example\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
 C:\Users\jorge\OneDrive\jorgeprg\csharp\examples\Rhino.ServiceBus.MSMQ.Example\Utils\obj\Debug\Utils.dll
 C:\Users\jorge\OneDrive\jorgeprg\csharp\examples\Rhino.ServiceBus.MSMQ.Example\Utils\obj\Debug\Utils.pdb
+C:\Users\jorge\OneDrive\jorgeprg\csharp\examples\Rhino.ServiceBus.MSMQ.Example\Utils\obj\Debug\Utils.csprojResolveAssemblyReference.cache
